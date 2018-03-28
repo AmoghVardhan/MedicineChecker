@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="app.com.example.android.medicinechecker.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="Number Of Cycles:"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:editable="false"
+            android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="40dp"
+
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dec"
+                android:text="-"
+                android:textAlignment="center"
+                android:editable="false"
+                android:layout_weight="1"
+                android:onClick="dec"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cycles"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:editable="false"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="40dp"
+
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inc"
+                android:text="+"
+                android:textAlignment="center"
+                android:editable="false"
+                android:layout_weight="1"
+                android:onClick="inc"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="1APS"
+        android:textSize="20dp"
+        android:id="@+id/c1"
+        android:checked="false" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="2NUX"
+        android:checked="false"
+        android:id="@+id/c2" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="3PULS"
+        android:checked="false"
+        android:id="@+id/c3" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="4ANT"
+        android:checked="false"
+        android:id="@+id/c4" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="5KALIB"
+        android:checked="false"
+        android:id="@+id/c5" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="6KALIC"
+        android:id="@+id/c6" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="7MED"
+        android:checked="false"
+        android:id="@+id/c7" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="8DROS"
+        android:checked="false"
+        android:id="@+id/c8" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="9TVB"
+        android:checked="false"
+        android:id="@+id/c9" android:textSize ="20dp"/>
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="10DULC"
+        android:checked="false"
+        android:id="@+id/c10" android:textSize ="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Done"
+            android:id="@+id/Done1"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="11NATS"
+            android:checked="false"
+            android:id="@+id/c11" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="12AMC"
+            android:checked="false"
+            android:id="@+id/c12" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="13BROM"
+            android:checked="false"
+            android:id="@+id/c13" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="14PHOS"
+            android:checked="false"
+            android:id="@+id/c14" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="15RUMX"
+            android:checked="false"
+            android:id="@+id/c15" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="16SPONS"
+            android:checked="false"
+            android:id="@+id/c16" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="17MEPH"
+            android:checked="false"
+            android:id="@+id/c17" android:textSize = "20dp"/>
+        
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="18BLATTA"
+            android:checked="false"
+            android:id="@+id/c18" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="19SULPH"
+            android:checked="false"
+            android:id="@+id/c19" android:textSize = "20dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="20FERRP"
+            android:checked="false"
+            android:id="@+id/c20" android:textSize = "20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Done"
+            android:id="@+id/Done2"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Save"
+            android:textSize="16sp"
+            android:id="@+id/refresh"
+            android:onClick="save"
+           />
+        
+    </LinearLayout>
+</LinearLayout>
