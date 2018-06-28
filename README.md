@@ -7,5 +7,5 @@ You don't have to note down these details in some book/notes.
 A simple medicine checker app is all that you need.</li>
 </ul>
 
-<img src="1.jpeg" height="300" width="300">
-<img src="2.jpeg" height="300" width="300">
+<img src="1.jpeg" height="400" width="300"> 
+<img src="2.jpeg" height="400" width="300">
